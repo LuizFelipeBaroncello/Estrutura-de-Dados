@@ -40,7 +40,7 @@ class Market
 
         double get_average_billing();
 
-        double
+        //double
 
         //botar geters de informacoes aqui
 

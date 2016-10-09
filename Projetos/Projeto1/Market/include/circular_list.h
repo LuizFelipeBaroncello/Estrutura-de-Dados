@@ -41,7 +41,7 @@ class CircularList
         void push_back(MarketBox* data);
 
         /*!
-        *  Adiciona fila no começo.
+        *  Adiciona fila no comeÃ§o.
         *   \param data dado a ser adicionado.
         *   \sa empty()
         */

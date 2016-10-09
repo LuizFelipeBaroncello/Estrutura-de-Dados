@@ -103,3 +103,4 @@ class MarketBox
 };
 
 #endif // MARKETBOX_H
+

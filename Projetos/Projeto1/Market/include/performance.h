@@ -18,13 +18,13 @@ class Performance
         const unsigned int& get_time_to_spend_item() const;
 
         /*!
-        *   \return um inteiro correspondente ao tempo que o caixa demora para passar o cart„o.
+        *   \return um inteiro correspondente ao tempo que o caixa demora para passar o cart√£o.
         */
         const unsigned int& get_time_to_spend_card() const;
 
     private:
         unsigned int time_to_spend_item_; /*!< Tempo para passar cada item. */
-        unsigned int time_to_spend_card_; /*!< Tempo para passar um cart„o. */
+        unsigned int time_to_spend_card_; /*!< Tempo para passar um cart√£o. */
 };
 
 #endif // PERFORMANCE_H

@@ -98,7 +98,7 @@ class TestLuiz
             string tipoPagamento("");
 
             if (cliente->get_pay_type() == PayType::card) {
-                tipoPagamento = "cart„o";
+                tipoPagamento = "cart√£o";
             } else {
                 tipoPagamento = "Dinheiro";
             }

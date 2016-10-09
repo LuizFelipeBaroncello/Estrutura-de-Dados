@@ -1,189 +1,106 @@
 # depslib dependency file v1.0
-1475688802 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\main.cpp
+1475976408 source:/home/lukasgrudtner/Market/Market/main.cpp
 	<iostream>
 	<stdio.h>
 	"performance.h"
 	"lukas.h"
 	"TestLuiz.h"
+	"user_interaction.h"
+	<sstream>
+	<fstream>
+	<string>
 	<iostream>
 
-1474923053 source:c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\main.cpp
+1475974875 /home/lukasgrudtner/Market/Market/include/performance.h
+
+1475975276 /home/lukasgrudtner/Market/Market/include/lukas.h
+	"linked_queue.h"
 	<iostream>
-	<stdio.h>
+	"client.h"
+	"market_box.h"
+
+1475975115 /home/lukasgrudtner/Market/Market/include/linked_queue.h
+	"client.h"
+	<cstdint>
+	<stdexcept>
+
+1475974931 /home/lukasgrudtner/Market/Market/include/client.h
+	"time_p.h"
+
+1475975017 /home/lukasgrudtner/Market/Market/include/time_p.h
+
+1475974841 /home/lukasgrudtner/Market/Market/include/market_box.h
+	<stdexcept>
+	<string>
+	"linked_queue.h"
 	"performance.h"
-	"bad_performance.h"
+	"time.h"
 
-1474922569 c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\include\performance.h
-
-1474923070 c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\include\bad_performance.h
-	"performance.h"
-
-1474902414 c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\include\medium_performance.h
-
-1474902414 c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\include\high_performance.h
-
-1474923091 source:c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\src\bad_performance.cpp
-	"bad_performance.h"
+1475975233 /home/lukasgrudtner/Market/Market/include/TestLuiz.h
 	<iostream>
-
-1474902414 source:c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\src\card.cpp
-	"card.h"
-
-1474923129 c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\include\card.h
-	"pay_type.h"
-
-1474902414 c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\include\pay_type.h
-
-1474902414 source:c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\src\cash.cpp
-	"cash.h"
-
-1474923145 c:\users\patricia\desktop\estrutura-de-dados-master\projetos\projeto1\market\include\cash.h
-	"pay_type.h"
-
-1474902414 source:c:\users\patricia\desktop\luiz felipe\ed\estrutura-de-dados\projetos\projeto1\market\src\card.cpp
-	"card.h"
-
-1474923129 c:\users\patricia\desktop\luiz felipe\ed\estrutura-de-dados\projetos\projeto1\market\include\card.h
-	"pay_type.h"
-
-1474902414 c:\users\patricia\desktop\luiz felipe\ed\estrutura-de-dados\projetos\projeto1\market\include\pay_type.h
-
-1474902414 source:c:\users\patricia\desktop\luiz felipe\ed\estrutura-de-dados\projetos\projeto1\market\src\cash.cpp
-	"cash.h"
-
-1474923145 c:\users\patricia\desktop\luiz felipe\ed\estrutura-de-dados\projetos\projeto1\market\include\cash.h
-	"pay_type.h"
-
-1475095470 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\performance.h
-
-1474978128 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\bad_performance.h
+	<string>
 	"performance.h"
-
-1474978128 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\bad_performance.cpp
-	"../include/bad_performance.h"
-	<iostream>
-
-1474904906 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\card.cpp
-	"card.h"
-
-1474978128 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\card.h
-	"pay_type.h"
-
-1475082029 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\pay_type.h
-
-1474904842 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\cash.cpp
-	"cash.h"
-
-1474978128 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\cash.h
-	"pay_type.h"
-
-1475769495 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\circular_list.cpp
+	"clock.h"
 	"circular_list.h"
+	"market_box.h"
+	"client.h"
+	"linked_queue.h"
 
-1475769495 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\circular_list.h
+1475974979 /home/lukasgrudtner/Market/Market/include/clock.h
+	"time_p.h"
+
+1475975074 /home/lukasgrudtner/Market/Market/include/circular_list.h
 	<cstdint>
 	<stdexcept>
 	"market_box.h"
 
-1475770551 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\client.cpp
+1475975084 source:/home/lukasgrudtner/Market/Market/src/circular_list.cpp
+	"circular_list.h"
+
+1475974938 source:/home/lukasgrudtner/Market/Market/src/client.cpp
 	<stdlib.h>
 	<time.h>
 	"client.h"
 
-1475770229 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\client.h
-	"time_p.h"
-
-1475777936 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\market_box.cpp
-	"market_box.h"
-
-1475771518 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\market_box.h
-	<stdexcept>
-	<string>
-	"linked_queue.h"
-	"performance.h"
-	"time.h"
-
-1474904770 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\pay_type.cpp
-	"pay_type.h"
-
-1475689819 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\performance.cpp
-	"performance.h"
-
-1475683585 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\time.cpp
-	"time.h"
-
-1475683585 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\time.h
-
-1475096499 source:c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\main.cpp
-	<iostream>
-	<stdio.h>
-	"performance.h"
-	"lukas.h"
-	"TestLuiz.h"
-
-1475095832 c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\include\performance.h
-
-1475099492 source:c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\src\circular_list.cpp
-	"circular_list.h"
-
-1475099492 c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\include\circular_list.h
-	<cstdint>
-	<stdexcept>
-	"market_box.h"
-
-1474913454 source:c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\src\client.cpp
-	"client.h"
-
-1475095832 c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\include\client.h
-
-1475094205 source:c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\src\market_box.cpp
-	"market_box.h"
-
-1475099697 c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\include\market_box.h
-	"linked_queue.h"
-	"performance.h"
-	"time.h"
-	<string>
-
-1475095832 source:c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\src\performance.cpp
-	"performance.h"
-
-1475097279 c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\include\lukas.h
-	"linked_queue.h"
-	<iostream>
-	"client.h"
-	"market_box.h"
-
-1475094204 c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\include\linked_queue.h
-	"client.h"
-	<cstdint>
-	<stdexcept>
-
-1475094204 source:c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\src\linked_queue.cpp
-	"linked_queue.h"
-
-1475688738 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\linked_queue.h
-	"client.h"
-	<cstdint>
-	<stdexcept>
-
-1475089082 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\clock.cpp
+1475974988 source:/home/lukasgrudtner/Market/Market/src/clock.cpp
 	"clock.h"
 
-1475685093 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\clock.h
-	"time_p.h"
-
-1475770743 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\linked_queue.cpp
+1475975123 source:/home/lukasgrudtner/Market/Market/src/linked_queue.cpp
 	"linked_queue.h"
 
-1475691397 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\lukas.h
-	"linked_queue.h"
-	<iostream>
-	"client.h"
+1475974854 source:/home/lukasgrudtner/Market/Market/src/market_box.cpp
 	"market_box.h"
 
-1475778293 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\testluiz.h
+1475974883 source:/home/lukasgrudtner/Market/Market/src/performance.cpp
+	"performance.h"
+
+1475975026 source:/home/lukasgrudtner/Market/Market/src/time_p.cpp
+	"time_p.h"
+
+1475973877 source:/home/lukasgrudtner/MarketReader/user_interaction.cpp
+	"user_interaction.h"
 	<iostream>
+	<sstream>
+	<iomanip>
+
+1475972942 /home/lukasgrudtner/MarketReader/user_interaction.h
+	<string>
+	<fstream>
+	<sstream>
+
+1475976081 source:/home/lukasgrudtner/Market/Market/src/user_interaction.cpp
+	"user_interaction.h"
+	<iostream>
+	<sstream>
+	<iomanip>
+
+1476018746 /home/lukasgrudtner/Market/Market/include/user_interaction.h
+	<string>
+	<fstream>
+	<sstream>
+	"market.h"
+
+1476018462 /home/lukasgrudtner/Market/Market/include/market.h
 	<string>
 	"performance.h"
 	"clock.h"
@@ -191,21 +108,4 @@
 	"market_box.h"
 	"client.h"
 	"linked_queue.h"
-
-1475095832 c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\include\testluiz.h
-	<iostream>
-	"performance.h"
-	"clock.h"
-	"circular_list.h"
-	"market_box.h"
-
-1475094205 c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\include\clock.h
-	"time.h"
-
-1475087261 c:\users\lukas\documents\github\estrutura-de-dados\projetos\projeto1\market\include\time.h
-
-1475685027 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\time_p.h
-
-1475685006 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\time_p.cpp
-	"time_p.h"
 
