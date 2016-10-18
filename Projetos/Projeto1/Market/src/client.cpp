@@ -1,7 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
-#include <iostream>
-
 #include "client.h"
 
 Client::Client()
@@ -9,41 +5,14 @@ Client::Client()
 
 }
 
-Client::Client(Time& arrival_time)
+Client::Client(Time& arrival_time, int total_purchases, int total_purchases_value, int pay_type, int queue_type)
 {
-    srand(time(0));
-    total_purchases_= 2+ (rand() %98);
-    set_total_purchases_value();
-    set_pay_type();
-    set_queue_type();
+
+    total_purchases_= total_purchases;
+    total_purchases_value_ = total_purchases_value;
+    pay_type_ = pay_type;
+    queue_type_ = queue_type;
     arrival_time_ = arrival_time;
-}
-
-void Client::set_queue_type()
-{
-    queue_type_ = rand() %2;
-}
-
-void Client::set_pay_type()
-{
-    int pay_type = 1 + (rand() %100);
-
-    if (pay_type < 80) {
-        pay_type_ = 0;
-    } else {
-        pay_type_ = 1;
-    }
-}
-
-void Client::set_total_purchases_value()
-{
-    for (auto i = 0; i < total_purchases_; i++) {
-        total_purchases_value_ += (1 + (rand()%89));
-    }
-    if (total_purchases_value_ > 10000) {
-        total_purchases_value_ = 0;
-        set_total_purchases_value();
-    }
 }
 
 Client::~Client()

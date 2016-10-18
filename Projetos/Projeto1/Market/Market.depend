@@ -144,8 +144,10 @@
 	<sstream>
 	"market.h"
 
-1476797551 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\market.h
+1476826581 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\market.h
 	<string>
+	<stdlib.h>
+	<time.h>
 	"performance.h"
 	"clock.h"
 	"circular_list.h"
@@ -175,16 +177,13 @@
 	<stdexcept>
 	"client.h"
 
-1476812983 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\client.h
+1476826179 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\client.h
 	"time_p.h"
 
 1476315421 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\circular_list.cpp
 	"circular_list.h"
 
-1476815206 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\client.cpp
-	<stdlib.h>
-	<time.h>
-	<iostream>
+1476826706 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\client.cpp
 	"client.h"
 
 1476641349 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\clock.cpp

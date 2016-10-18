@@ -45,11 +45,13 @@ void Market::add_box(std::string nome, unsigned int performance, double salary)
 
 void Market::start_simulation()
 {
+    srand(time(0));
     while(time_of_simulation_->get_time_in_hours() > clock->get_time()->get_time_in_hours()) {
         simulate_box();
 
         if (clock->get_time()->get_time_in_seconds() == time_of_next_client->get_time_in_seconds()) {
-            Client* client = new Client(*clock->get_time());
+            int total_purchases = get_total_purchases();
+            Client* client = new Client(*clock->get_time(), total_purchases, get_total_purchases_value(total_purchases), get_pay_type(), get_queue_type());
 
             if (!full_market()) {
                 add_client(client);
@@ -225,4 +227,38 @@ std::string Market::get_identifier(unsigned int index) {
 
 int Market::get_num_of_boxes() {
     return box_list->size();
+}
+
+int Market::get_queue_type()
+{
+    return rand() %2;
+}
+
+int Market::get_pay_type()
+{
+    int pay_type = 1 + (rand() %100);
+
+    if (pay_type < 80) {
+        return 0;
+    } else {
+        return 1;
+    }
+}
+
+int Market::get_total_purchases_value(int total_purchases)
+{
+    int total_purchases_value_ = 0;
+
+    for (auto i = 0; i < total_purchases; i++) {
+        total_purchases_value_ += (1 + (rand()%89));
+    }
+    if (total_purchases_value_ > 10000) {
+        return get_total_purchases_value(total_purchases);
+    }
+    return total_purchases_value_;
+}
+
+int Market::get_total_purchases()
+{
+    return 2+ (rand() %98);
 }

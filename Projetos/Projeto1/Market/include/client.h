@@ -26,7 +26,7 @@ class Client
         *   \param tempo de chegada.
         *   \param tempo de saida.
         */
-        Client(Time& arrival_time);
+        Client(Time& arrival_time, int total_purchases, int total_purchases_value, int pay_type, int queue_type);
 
         /*!
         *   Destrutor.
@@ -75,24 +75,9 @@ class Client
 
     private:
 
-        /*!
-        *   Define o tipo de fila que o cliente tem preferencia.
-        */
-        void set_queue_type();
-
-        /*!
-        *   Define o metodo de pagamento com 80% de chances de ser cartao.
-        */
-        void set_pay_type();
-
-        /*!
-        *   Define o valor total das compras.
-        */
-        void set_total_purchases_value();
-
         int pay_type_;              /*!< Tipo de pagamento do cliente. 0 = Cartao*/
         int queue_type_;          /*!< Tipo de fila que o cliente tem preferencia. 0 = Menos pessoas */
-        unsigned int total_purchases_;  /*!< Numero de produtos. */
+        int total_purchases_;  /*!< Numero de produtos. */
         int total_purchases_value_;  /*!< Valor de todos os produtos. */
         Time arrival_time_;            /*!< Tempo no qual o cliente entrou na fila. */
         Time exit_time_;               /*!< Tempo no qual o cliente saira da fila. */

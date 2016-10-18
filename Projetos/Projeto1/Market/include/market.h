@@ -10,6 +10,8 @@
 #define MARKET_H
 
 #include <string>
+#include <stdlib.h>
+#include <time.h>
 
 #include "performance.h"
 #include "clock.h"
@@ -148,6 +150,26 @@ class Market
         *   Define que cliente na compareceu.
         */
         void set_dropped_client(Client* client);
+
+        /*!
+        *   Retorna o tipo de fila que o cliente tem preferencia.
+        */
+        int get_queue_type();
+
+        /*!
+        *   Retorna o metodo de pagamento com 80% de chances de ser cartao.
+        */
+        int get_pay_type();
+
+        /*!
+        *   Retorna o valor total das compras.
+        */
+        int get_total_purchases_value(int total_purchases);
+
+        /*!
+        *   Retorna o numero de produtos comprados.
+        */
+        int get_total_purchases();
 
         CircularList* box_list;                                     /*!< Fila com caixas do mercado. */
         Clock* clock;                                               /*!< Relogio do mercado. */
