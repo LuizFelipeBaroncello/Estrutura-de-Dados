@@ -68,7 +68,6 @@ long int MarketBox::get_profit()
 
 void MarketBox::add_client(Client& client)
 {
-
     client.set_exit_time(output_time(client));
     total_billing += client.get_total_value();
     total_hold_time->add_seconds(client.get_average_time().get_time_in_seconds());
@@ -79,7 +78,7 @@ Time& MarketBox::output_time(Client& client)
 {
         int exit_time = performance_->get_time_to_spend_item() * client.get_total_purchases();
 
-        if (client.get_pay_type() == PayType::card)
+        if (client.get_pay_type() == 0)
             exit_time += performance_->get_time_to_spend_card();
         if (client_queue->empty()) {
             exit_time += client.get_arrival_time().get_time_in_seconds();

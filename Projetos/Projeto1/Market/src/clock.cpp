@@ -2,7 +2,7 @@
 
 Clock::Clock()
 {
-
+    time = new Time();
 }
 
 Clock::~Clock()

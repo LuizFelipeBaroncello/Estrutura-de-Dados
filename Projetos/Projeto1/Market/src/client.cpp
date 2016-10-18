@@ -21,13 +21,7 @@ Client::Client(Time& arrival_time)
 
 void Client::set_queue_type()
 {
-    int queue_type = rand() %2;
-
-    if (queue_type == 1) {
-        queue_type_ = QueueType::less_Products;
-    } else {
-        queue_type_ = QueueType::less_size;
-    }
+    queue_type_ = rand() %2;
 }
 
 void Client::set_pay_type()
@@ -35,9 +29,9 @@ void Client::set_pay_type()
     int pay_type = 1 + (rand() %100);
 
     if (pay_type < 80) {
-        pay_type_ = PayType::card;
+        pay_type_ = 0;
     } else {
-        pay_type_ = PayType::cash;
+        pay_type_ = 1;
     }
 }
 
@@ -45,6 +39,10 @@ void Client::set_total_purchases_value()
 {
     for (auto i = 0; i < total_purchases_; i++) {
         total_purchases_value_ += (1 + (rand()%89));
+    }
+    if (total_purchases_value_ > 10000) {
+        total_purchases_value_ = 0;
+        set_total_purchases_value();
     }
 }
 
@@ -73,12 +71,12 @@ const Time Client::get_average_time()
     return *new Time(get_exit_time().get_time_in_seconds() - get_arrival_time().get_time_in_seconds());
 }
 
-PayType Client::get_pay_type()
+int Client::get_pay_type()
 {
     return pay_type_;
 }
 
-QueueType Client::get_queue_type()
+int Client::get_queue_type()
 {
     return queue_type_;
 }

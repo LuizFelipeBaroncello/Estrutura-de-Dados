@@ -176,7 +176,7 @@ long int Market::get_average_queue_time_in_seconds()
 
 void Market::add_client(Client* client)
 {
-    if (client->get_queue_type() == QueueType::less_size) {
+    if (client->get_queue_type() == 0) {
         add_client_less_size_queue(client);
     } else {
         add_client_less_products_queue(client);

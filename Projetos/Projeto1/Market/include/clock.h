@@ -43,7 +43,7 @@ class Clock
         Time* get_time() const;
 
     private:
-        Time* time = new Time(); /*!< Tempo. */
+        Time* time; /*!< Tempo. */
 
 };
 
