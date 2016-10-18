@@ -11,6 +11,16 @@
 
 #include "time_p.h"
 
+        /*!
+        *   Tipos de pagamento possiveis.
+        */
+        enum class PayType { cash, card };
+
+        /*!
+        *   Tipos de fila que o cliente pode escolher.
+        */
+        enum class QueueType { less_Products, less_size };
+
 //! Classe Client para clientes.
 class Client
 {
@@ -56,12 +66,12 @@ class Client
         /*!
         *   \return tipo de pagamento.
         */
-        int get_pay_type();
+        PayType get_pay_type();
 
         /*!
         *   \return tipo de fila.
         */
-        int get_queue_type();
+        QueueType get_queue_type();
 
         /*!
         *   \return total de compras.
@@ -75,8 +85,8 @@ class Client
 
     private:
 
-        int pay_type_;              /*!< Tipo de pagamento do cliente. 0 = Cartao*/
-        int queue_type_;          /*!< Tipo de fila que o cliente tem preferencia. 0 = Menos pessoas */
+        PayType pay_type_;              /*!< Tipo de pagamento do cliente. 0 = Cartao*/
+        QueueType queue_type_;          /*!< Tipo de fila que o cliente tem preferencia. 0 = Menos pessoas */
         int total_purchases_;  /*!< Numero de produtos. */
         int total_purchases_value_;  /*!< Valor de todos os produtos. */
         Time arrival_time_;            /*!< Tempo no qual o cliente entrou na fila. */

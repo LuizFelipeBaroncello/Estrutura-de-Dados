@@ -127,7 +127,7 @@
 1476645930 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/user_interaction.h
 	<string>
 
-1476797551 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\main.cpp
+1476830114 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\main.cpp
 	"performance.h"
 	"user_interaction.h"
 	"control.h"
@@ -137,7 +137,7 @@
 1476797551 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\user_interaction.h
 	<string>
 
-1476797551 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\control.h
+1476830114 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\control.h
 	<string>
 	<fstream>
 	<sstream>
@@ -176,19 +176,19 @@
 	<stdexcept>
 	"client.h"
 
-1476826179 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\client.h
+1476830273 c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\include\client.h
 	"time_p.h"
 
-1476315421 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\circular_list.cpp
+1476830114 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\circular_list.cpp
 	"circular_list.h"
 
-1476826706 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\client.cpp
+1476830385 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\client.cpp
 	"client.h"
 
 1476641349 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\clock.cpp
 	"clock.h"
 
-1476797551 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\control.cpp
+1476830114 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\control.cpp
 	"control.h"
 	<iostream>
 	<sstream>
@@ -199,17 +199,17 @@
 1476226639 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\linked_queue.cpp
 	"linked_queue.h"
 
-1476813764 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\market.cpp
+1476830414 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\market.cpp
 	"market.h"
 
-1476814339 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\market_box.cpp
+1476830425 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\market_box.cpp
 	<iostream>
 	"market_box.h"
 
 1475693419 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\performance.cpp
 	"performance.h"
 
-1476797551 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\time_p.cpp
+1476830114 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\time_p.cpp
 	"time_p.h"
 
 1476797551 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\src\user_interaction.cpp
