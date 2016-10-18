@@ -55,7 +55,7 @@ void CircularList::insert(MarketBox* data, std::size_t index)
         } else {
             new_Node = new Node(data);
             previous = sentinel->next();
-            for (int i = 0; i < index -1; i++) {
+            for (auto i = 0u; i < index -1; i++) {
                 previous = previous->next();
             }
             if (index != size()) {
@@ -79,7 +79,7 @@ MarketBox* CircularList::at(std::size_t index) const
         if (index > size() || index < 0) {
             throw std::out_of_range("Invalid_position_Exception");
         } else {
-            for (int i = 0; i < index; i++) {
+            for (auto i = 0u; i < index; i++) {
                 data_ = data_->next();
             }
             return data_->data();
@@ -100,7 +100,7 @@ MarketBox* CircularList::pop(std::size_t index)
             return pop_front();
         } else {
             previous = sentinel->next();
-            for (int i = 0; i < index -1; i++) {
+            for (auto i = 0u; i < index -1; i++) {
                 previous = previous->next();
             }
             to_eliminate = previous->next();

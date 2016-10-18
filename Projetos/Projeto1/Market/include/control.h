@@ -35,15 +35,23 @@ class Control
         Control();
 
         /*!
-         * Define o tipo de entrada dos parametros para simulação: manual ou por
-         * meio de um arquivo.dat.
-         */
-        void type_of_entry();
+        *   Destrutor.
+        */
+        ~Control();
 
         /*!
          * Imprime os dados da simulacao.
          */
         void print_data();
+
+
+
+    private:
+        /*!
+         * Define o tipo de entrada dos parametros para simulação: manual ou por
+         * meio de um arquivo.dat.
+         */
+        void type_of_entry();
 
         /*!
          *  Abre arquivo
@@ -95,12 +103,11 @@ class Control
          */
         unsigned int get_number_of_market_box();
 
-    private:
         ifstream file;  /*!< Arquivo. */
         std::string line;   /*!< Linha, uma vari�vel do tipo string. */
         std::string market_name;    /*!< Nome do mercado, do tipo string. */
-        unsigned int time_of_simulation_in_hours;   /*!< Tempo de simula��o. */
-        unsigned int average_arrival_time_of_customers_in_seconds;  /*!< Tempo m�dio de chegada de clientes. */
+        unsigned int time_of_simulation;   /*!< Tempo de simula��o. */
+        unsigned int average_arrival_time_of_customers;  /*!< Tempo m�dio de chegada de clientes. */
         unsigned int number_of_market_box;  /*!< N�mero de caixas do mercado. */
         Market* market; /*!< Ponteiro para a inst�ncia do Mercado. */
 };

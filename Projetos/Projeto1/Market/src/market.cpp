@@ -83,7 +83,7 @@ bool Market::full_market()
 void Market::add_client_less_size_queue(Client* client)
 {
     MarketBox* aux_less_size;
-    int less_size = 50;
+    auto less_size = 50u;
     box_list->passes_forward();
     while (box_list->get_data_pointer_element()->get_identifier() != "sentinel") {
         if (box_list->get_data_pointer_element()->get_num_of_clients_in_queue() < less_size) {
@@ -103,7 +103,7 @@ void Market::add_client_less_size_queue(Client* client)
 void Market::add_client_less_products_queue(Client* client)
 {
     MarketBox* aux_less_products;
-    int less_products = 10000000000;
+    auto less_products = 100000u;
 
      box_list->passes_forward();
      while (box_list->get_data_pointer_element()->get_identifier() != "sentinel") {
@@ -146,7 +146,7 @@ long int Market::get_total_billing()
 long int Market::get_average_billing()
 {
     long int average_billing = 0;
-    for (auto i = 0; i < box_list->size() ; i++) {
+    for (auto i = 0u; i < box_list->size() ; i++) {
         average_billing += box_list->at(i)->get_average_billing();
     }
 
@@ -156,7 +156,7 @@ long int Market::get_average_billing()
 long int Market::get_total_profit()
 {
     long int total_profit = 0;
-    for (auto i = 0; i < box_list->size() ; i++) {
+    for (auto i = 0u; i < box_list->size() ; i++) {
         total_profit += box_list->at(i)->get_profit();
     }
 

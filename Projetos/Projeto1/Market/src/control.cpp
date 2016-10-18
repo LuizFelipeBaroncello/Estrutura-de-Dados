@@ -13,13 +13,16 @@ namespace control {
     {
         type_of_entry();
         market->start_simulation();
-        print_data();
+    }
+
+    Control::~Control()
+    {
+        delete market;
     }
 
     void Control::open_file(std::ifstream &file)
     {
         file.open("input.dat");
-
     }
 
     void Control::read_file(std::ifstream &file)
@@ -39,7 +42,7 @@ namespace control {
 
         insert(buffer);
 
-        market = new Market(get_market_name(), get_time_of_simulation_in_hours(), get_average_arrival_time_of_customers_in_seconds(), 10u);
+        market = new Market(market_name, time_of_simulation, average_arrival_time_of_customers, 10u);
 
         cout << "=================== CAIXAS REGISTRADOS =====================";
         while (!file.eof()) {
@@ -84,40 +87,26 @@ namespace control {
         market_name = buffer[0];
 
         istringstream convert(buffer[1]);
-        convert >> time_of_simulation_in_hours;
+        convert >> time_of_simulation;
 
         istringstream convert2(buffer[2]);
-        convert2 >> average_arrival_time_of_customers_in_seconds;
+        convert2 >> average_arrival_time_of_customers;
 
         istringstream convert3(buffer[3]);
         convert3 >> number_of_market_box;
 
+        // Conversão de string para integer com stoi.
+        // market_name = buffer[0];
+        // time_of_simulation = stoi(buffer[1]);
+        // average_arrival_time_of_customers = stoi(buffer[2]);
+        // number_of_market_box = stoi(buffer[3]);
+
     }
-
-  std::string Control::get_market_name()
-  {
-      return market_name;
-  }
-
-  unsigned int Control::get_time_of_simulation_in_hours()
-  {
-      return time_of_simulation_in_hours;
-  }
-
-  unsigned int Control::get_average_arrival_time_of_customers_in_seconds()
-  {
-      return average_arrival_time_of_customers_in_seconds;
-  }
-
-  unsigned int Control::get_number_of_market_box()
-  {
-      return number_of_market_box;
-  }
 
   void Control::type_of_entry()
   {
     string market_name, identifier;
-    unsigned int time_of_simulation, average_arrival_time_of_customers, number_of_box, performance;
+    unsigned int performance;
     double salary;
     UserInteraction user;
 
@@ -131,12 +120,12 @@ namespace control {
         market_name = user.get_string("Informe o nome do Supermercado: ");
         time_of_simulation = user.get_unsigned_int("Insira o tempo de simulacao (em horas): ");
         average_arrival_time_of_customers = user.get_unsigned_int("Insira o tempo medio de chegada dos clientes (em segundos): ");
-        number_of_box = user.get_unsigned_int("Insira o numero de caixas: ");
+        number_of_market_box = user.get_unsigned_int("Insira o numero de caixas: ");
         cout << "==============================================================\n";
 
         market = new Market(market_name, time_of_simulation, average_arrival_time_of_customers, 10u);
 
-        for (auto i = 0u; i < number_of_box; ++i) {
+        for (auto i = 0u; i < number_of_market_box; ++i) {
             identifier = user.get_string_with_index("Insira o identificador do caixa", i+1);
             performance = user.get_unsigned_int_with_index("Informe o desempenho do caixa", i+1);
             salary = user.get_double_with_index("Informe o salario do caixa", i+1);
@@ -154,10 +143,10 @@ namespace control {
   void Control::print_data()
   {
       cout << "\n======================== SIMULACAO ========================\n"
-           << "Tempo de Simulação: " << get_time_of_simulation_in_hours() << " horas\n"
+           << "Tempo de Simulação: " << time_of_simulation << " horas\n"
            << "Tempo Medio de Chegada dos Clientes: "
-           << get_average_arrival_time_of_customers_in_seconds() << " segundos\n"
-           << "Numero de Caixas: " << get_number_of_market_box() << "\n";
+           << average_arrival_time_of_customers << " segundos\n"
+           << "Numero de Caixas: " << number_of_market_box << "\n";
       cout << "===========================================================\n";
 
       cout << "\n====================== SUPERMERCADO =======================\n"
@@ -167,7 +156,7 @@ namespace control {
            << "===========================================================\n";
 
       cout << "\n======================== CAIXAS ===========================";
-      for (auto i = 0u; i < market->get_num_of_boxes(); ++i) {
+      for (auto i = 0; i < market->get_num_of_boxes(); ++i) {
           cout << "\n--- Caixa [" << market->get_identifier(i) << "] ---\n";
           cout << "Faturamento Medio: R$ " << market->get_average_billing_box(i) << ",00\n"
                << "Faturamento Total: R$ " << market->get_billing(i) << ",00\n"

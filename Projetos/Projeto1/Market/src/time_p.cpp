@@ -22,8 +22,6 @@ const unsigned int Time::get_time_in_seconds() const
 
 const unsigned int Time::get_time_in_minutes() const
 {
-    unsigned int time = get_time_in_seconds()/60;
-
     return (get_time_in_seconds()/60);
 }
 

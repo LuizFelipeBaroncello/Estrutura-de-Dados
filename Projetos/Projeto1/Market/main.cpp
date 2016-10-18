@@ -7,4 +7,6 @@ int main()
     using namespace control;
 
     Control* control = new Control();
+    control->print_data();
+    delete control;
 }
