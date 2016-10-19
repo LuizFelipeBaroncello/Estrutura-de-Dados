@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 0 <<<<<<< HEAD
 
-1476824733 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/main.cpp
+1476903261 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/main.cpp
 	"performance.h"
 	"user_interaction.h"
 	"control.h"
@@ -23,7 +23,7 @@
 	"market.h"
 	<iostream>
 
-1476398467 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/performance.h
+1476903261 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/performance.h
 
 1476399315 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/lukas.h
 	"linked_queue.h"
@@ -31,19 +31,19 @@
 	"client.h"
 	"market_box.h"
 
-1476645882 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/linked_queue.h
+1476903261 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/linked_queue.h
 	<cstdint>
 	<stdexcept>
 	"client.h"
 
-1476823289 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/client.h
+1476903261 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/client.h
 	"time_p.h"
 
 1476315759 D
 
-1476644997 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/time_p.h
+1476903261 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/time_p.h
 
-1476398459 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/market_box.h
+1476903261 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/market_box.h
 	<stdexcept>
 	<string>
 	"linked_queue.h"
@@ -61,15 +61,15 @@
 	"linked_queue.h"
 	"market.h"
 
-1476823289 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/clock.h
+1476903261 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/clock.h
 	"time_p.h"
 
-1476398512 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/circular_list.h
+1476903261 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/circular_list.h
 	<cstdint>
 	<stdexcept>
 	"market_box.h"
 
-1476823289 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/market.h
+1476903261 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/market.h
 	<string>
 	<stdlib.h>
 	<time.h>
@@ -80,22 +80,22 @@
 	"client.h"
 	"linked_queue.h"
 
-1476825429 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/control.h
+1476903261 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/control.h
 	<string>
 	<fstream>
 	<sstream>
 	"market.h"
 
-1476822043 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/circular_list.cpp
+1476903261 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/circular_list.cpp
 	"circular_list.h"
 
-1476823289 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/client.cpp
+1476903261 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/client.cpp
 	"client.h"
 
-1476823289 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/clock.cpp
+1476903261 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/clock.cpp
 	"clock.h"
 
-1476646052 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/control.cpp
+1476902932 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/control.cpp
 	"control.h"
 	<iostream>
 	<sstream>
@@ -103,28 +103,28 @@
 	<string>
 	"user_interaction.h"
 
-1476315759 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/linked_queue.cpp
+1476903261 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/linked_queue.cpp
 	"linked_queue.h"
 
-1476645856 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/market.cpp
+1476903261 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/market.cpp
 	"market.h"
 
-1476823289 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/market_box.cpp
+1476903261 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/market_box.cpp
 	<iostream>
 	"market_box.h"
 
-1476315759 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/performance.cpp
+1476903261 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/performance.cpp
 	"performance.h"
 
-1476822191 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/time_p.cpp
+1476903261 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/time_p.cpp
 	"time_p.h"
 
-1476645937 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/user_interaction.cpp
+1476902757 source:/home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/src/user_interaction.cpp
 	<iostream>
 	<string>
 	"user_interaction.h"
 
-1476645930 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/user_interaction.h
+1476903261 /home/lukasgrudtner/Git/Estrutura-de-Dados/Projetos/Projeto1/Market/include/user_interaction.h
 	<string>
 
 1476830114 source:c:\users\luizf\desktop\ed\estrutura-de-dados\projetos\projeto1\market\main.cpp

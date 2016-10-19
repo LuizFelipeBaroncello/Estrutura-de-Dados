@@ -46,6 +46,7 @@ bool UserInteraction::select_entry_with_file()
 string UserInteraction::get_string(string msg)
 {
     string input;
+    cout << "Caso necessário, utilize (_) ou (-) ao invés de (espaços) \npara espaçamentos entre duas palavas.\n\n";
     cout << msg;
     cin >> input;
     return input;

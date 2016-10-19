@@ -127,8 +127,8 @@ namespace control {
 
         for (auto i = 0u; i < number_of_market_box; ++i) {
             identifier = user.get_string_with_index("Insira o identificador do caixa", i+1);
-            performance = user.get_unsigned_int_with_index("Informe o desempenho do caixa", i+1);
-            salary = user.get_double_with_index("Informe o salario do caixa", i+1);
+            performance = user.get_unsigned_int_with_index("Informe o desempenho do caixa (somente 1, 2 ou 3)", i+1);
+            salary = user.get_double_with_index("Informe o salario do caixa (somente números)", i+1);
 
             market->add_box(identifier, performance, salary);
 
